@@ -1,0 +1,14 @@
+.title_heading{
+    position: relative;
+    margin-bottom: 12px;
+}
+.title_heading::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 25px;
+    background: #84C550;
+    top: 110%;
+    left: 5px;
+
+}
