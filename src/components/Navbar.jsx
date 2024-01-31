@@ -47,13 +47,13 @@ const Navbar = () => {
   return (
     <nav className='sticky top-0 z-20 bg-white'>
        
-        <section className='flex flex-col  justify-between shadow-md'>
-            <div className='py-4 pl-4 flex items-center gap-4'>
+        <section className='flex px-8 items-center justify-between shadow-md'>
+            <div className='py-4 flex items-center gap-4'>
                 <FiMenu size={30} className='md:hidden' onClick={openMenuHandler}/>
-                <img src="/images/logo2.png" alt="" className='w-[200px]' />
+                <img src="/images/logo2.png" alt="" className='w-[230px]' />
             </div>
             {isMenuOpen && 
-                <ul className='gap-8 border-t-[1px] pl-4 md:hidden'>
+                <ul className='gap-8 pl-4 md:hidden'>
                     <li className='py-4'><NavLink to="/" className={({ isActive }) => isActive ? "font-bold" : ""}>Home</NavLink></li>
                     <li className='py-4'><NavLink to="/about" className={({ isActive }) => isActive ? "font-bold" : ""}>About us</NavLink></li>
                     <li className='py-4'><NavLink to="/singlephase" className={({ isActive }) => isActive ? "font-bold" : ""}>Single Phase Motors</NavLink></li>
@@ -63,7 +63,7 @@ const Navbar = () => {
             }
             
     
-            <ul className='md:flex gap-8 border-t-[1px] pl-4 hidden'>
+            <ul className='md:flex gap-8 pl-4 hidden'>
                 <li className='py-4'><NavLink to="/" className={({ isActive }) => isActive ? "font-bold" : ""}>Home</NavLink></li>
                 <li  className='py-4'><NavLink to="/about" className={({ isActive }) => isActive ? "font-bold" : ""}>About us</NavLink></li>
                 <li className='relative py-4' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

@@ -23,12 +23,11 @@ const Banner = () => {
                     <div>
                       <img src="/images/products/single_phase_motor.png" alt="" />
                     </div>
-                    <div className='flex flex-col  justify-center gap-4'>
+                    <div className='flex flex-col justify-center gap-4'>
                       <h1 className='lg:text-6xl text-5xl font-extrabold text-black'>High Performace <br />Electrical Tools</h1>
                       <p className='text-[#598039]'>Power Up Your World: Unleash Innovation with Our Electrical Essentials!</p>
                       <div className='flex gap-4 font-semibold mt-2'>
                           <Button category='primarybtn'>Check our products</Button>
-                      
                       </div>
                     </div>
                   </div>
