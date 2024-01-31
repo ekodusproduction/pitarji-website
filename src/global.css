@@ -1,0 +1,22 @@
+.title_heading{
+    position: relative;
+    margin-bottom: 12px;
+}
+.title_heading::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 50px;
+    background: #2d6301;
+    top: 110%;
+    left: 5px;
+
+}
+
+.text-shadow{
+    text-shadow: 2px 5px 15px rgba(196, 196, 196, 0.438);
+}
+
+.our-products-image{
+    width:300px;
+}
