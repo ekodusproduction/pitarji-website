@@ -11,6 +11,7 @@ import SinglePhaseMotor from './pages/SinglePhaseMotor'
 import ThreePhaseMotors from './pages/ThreePhaseMotors'
 import Contact from './pages/Contact'
 import SinglePhaseDetails from './pages/SinglePhaseDetails'
+import ThreePhaseDetails from './pages/ThreePhaseDetails'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/singlephase' element={<SinglePhaseMotor/>}/>
         <Route path='/threephase' element={<ThreePhaseMotors/>}/>
         <Route path='/singlephasedetails' element={<SinglePhaseDetails/>}/>
+        <Route path='/threephasedetails' element={<ThreePhaseDetails/>}/>
       </Routes>
      
     </BrowserRouter>

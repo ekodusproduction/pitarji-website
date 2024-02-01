@@ -18,7 +18,7 @@ const ThreePhaseProduct = ({data}) => {
           <div className='flex flex-col gap-4'>
             <h3 className='font-semibold text-lg'>{data.title}</h3>
             <p className='text-md text-slate-700'>{data.description.slice(0,120)}...</p>
-            <Button category='primarybtn' clickHandler={()=>navigate('/singlephasedetails', { state: {key: data} })}>View Details</Button>
+            <Button category='primarybtn' clickHandler={()=>navigate('/threePhaseDetails', { state: {key: data} })}>View Details</Button>
           </div>
         </div>
       )

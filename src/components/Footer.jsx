@@ -1,13 +1,15 @@
 import React from 'react'
 import { FaEnvelope, FaMapMarker, FaMapMarkerAlt, FaMarker, FaPhone, FaPhoneAlt } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <div className='bg-[#181821] text-white lg:px-32 md:px-12 py-12 px-4 flex flex-col lg:flex-row justify-center gap-8'>
-        <div className='lg:w-[40vw]'>
+        <div className='lg:w-[50vw]'>
             <div className='mb-5'>
-                <img className='w-[170px]' src='/images/logo-main-white.png'/>
+                <NavLink to="/">
+                    <img className='w-[170px]' src='/images/logo-main-white.png'/>
+                </NavLink>
             </div>
             <p className='mb-2 pl-2 text-sm'>
                 <b>Welcome to Pitarji – Your Trusted Partner in Power Solutions!</b>
@@ -19,7 +21,7 @@ const Footer = () => {
                 solutions to meet your diverse needs.
             </p>
         </div>
-        <div className='lg:w-[25vw] pl-16'>
+        <div className='lg:w-[25vw]'>
             <h4  className='text-lg font-semibold mb-6 title_heading'>Quick Links</h4>
             <ul>
                 <li className='px-4 py-1 border-slate-700'><Link to="/">Home</Link></li>

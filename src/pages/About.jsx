@@ -20,8 +20,8 @@ const About = () => {
         <Navbar/>
         <Header title={'About Us'}/>
         <section>
-        <div className='py-16 p-4 lg:px-16 flex flex-col lg:flex-row-reverse justify-center gap-4 lg:gap-12'>
-            <div className='lg:w-[600px]'>
+        <div className='py-16 p-4 lg:px-16 flex flex-col lg:flex-row-reverse justify-center gap-4 lg:gap-20'>
+            <div className='lg:w-[35vw]'>
                 <div data-aos="fade-right" data-aos-duration="1200">
                     <p className='font-semibold text-lg text-[#000]'>Know About us</p>
                     <h2 className=' font-bold text-3xl my-4'>
@@ -49,7 +49,7 @@ const About = () => {
         </div>
         </section>
         <section  data-aos="fade-up" data-aos-duration="1200" className='border' style={{ background: 'url(images/bg-9.jpg)',backgroundSize:'cover'}}>
-            <div className='md:w-[80vw] lg:w[70vw] flex lg:flex-row flex-col justify-center items-center mx-auto p-10 gap-8 lg:gap-16'>
+            <div className='w-[100vw] lg:w-[70vw] flex lg:flex-row flex-col justify-center items-center mx-auto p-8 gap-8 lg:gap-16'>
                 <div className='shrink-0'>
                     <img src="/images/profile.png" className='w-[200px] lg:w-[200px] rounded' alt="" />
                 </div>
@@ -102,7 +102,7 @@ const About = () => {
                 </ul>
             </div>
         </section>
-        <section className='flex lg:flex-row-reverse flex-col justify-center items-center gap-12 mb-16' data-aos="fade-up" data-aos-duration="900">
+        <section className='flex lg:flex-row-reverse flex-col justify-center items-center p-4 gap-12 mb-16' data-aos="fade-up" data-aos-duration="900">
             <div className='mt-4'>
                 <img className='lg:h-[320px] rounded' src="/images/our-vision.jpg" alt="" />
             </div>
