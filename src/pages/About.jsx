@@ -75,7 +75,7 @@ const About = () => {
         </section>
         <section className='flex lg:flex-row flex-col justify-center items-center gap-12 my-16 p-4 mb-16' data-aos="fade-up" data-aos-duration="1200">
             <div className='mt-4'>
-                <img className='lg:w-[40vw] rounded' src="/images/our-mission.jpg" alt="" />
+                <img className='lg:h-[320px] rounded' src="/images/our-mission.jpg" alt="" />
             </div>
             <div className='lg:w-[40vw] flex flex-col gap-4'>
                 <h2 className='text-3xl font-bold '>Our Mission</h2>
@@ -104,7 +104,7 @@ const About = () => {
         </section>
         <section className='flex lg:flex-row-reverse flex-col justify-center items-center gap-12 mb-16' data-aos="fade-up" data-aos-duration="900">
             <div className='mt-4'>
-                <img className='lg:w-[40vw] rounded' src="/images/our-vision.jpg" alt="" />
+                <img className='lg:h-[320px] rounded' src="/images/our-vision.jpg" alt="" />
             </div>
             <div className='lg:w-[40vw] flex flex-col gap-4'>
                 <h2 className='text-3xl font-bold '>Our Vision</h2>
