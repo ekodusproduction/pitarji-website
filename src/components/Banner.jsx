@@ -27,7 +27,7 @@ const Banner = () => {
         <SplideSlide>
           <header 
               className='lg:h-[80vh] flex flex-col items-center justify-center gap-4 sm:p-16 p-8'
-              style={{ background: 'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/images/bg3.jpg")',backgroundSize:'fill'}} >
+              style={{ background: 'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/images/bg-10.jpg")',backgroundSize:'fill'}} >
                   <div className='flex flex-col-reverse lg:flex-row-reverse items-center justify-center gap-16'>
                     <div>
                       <img className='w-[500px]' data-aos='fade-left' data-aos-duration="1000" src="/images/products/single_phase_motor.png" alt="" />
