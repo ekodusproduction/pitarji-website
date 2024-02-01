@@ -1,89 +1,79 @@
 import React from 'react'
 import dummyproductimage from '/images/products/dummyproduct.png'
-import nemaB42B48 from '/images/products/nema-b42-b48.png'
-import havacMotor from '/images/products/hvac-motor.png'
-import nema56FrameMotor from '/images/products/nema-56-frame.png'
-import HundredS from '/images/products/100S.png'
-import HundredSWood from '/images/products/100sWood.png'
-import CIBody from '/images/products/CIBody.png'
-import ExplosionProof from '/images/products/ExplosionProof.png'
-import IEC from '/images/products/IEC.png'
-import sheetal from '/images/products/sheetal.png'
-import riceHuller from '/images/products/riceHuller.png'
-import coolerMotor from '/images/products/cooler-motor.png'
-import flange from '/images/products/flange.png'
+import StandardThreePhase from '/images/products/ThreePhase/ThreePhaseStandard.png'
+import HighEfficiency from '/images/products/ThreePhase/HighEfficiency.png'
 
 export const data = [
-    // {
-    //   id: 1,
-    //   title: 'NEMA B42/B48 Frame Motors',
-    //   image: nemaB42B48,
-    //   description: 'General Purpose FHP (Fractional Horse Power) and Air Handling application motors are offered in NEMA B42/B48 Frame. These motors are designed for high efficiency and reliability, considering the global customer requirements. Motors are offered with different mounting arrangements ( Lug, Bracket, Stud, End-Shield Pad, Resilient Ring, Resilient Base) with open or closed enclosures. Thermal protection is optional and provided against requirement. ',
-    //   applications: 'Juicer, Bench Drilling Machine, Ice Cream Vending Machine, Wet Grinder, Winnowing Fan...',
-    //   range: '75 W to 370 W 2,4 & 6 Pole',
-    //   standard: 'IS, NEMA',
-    //   features: [
-    //     'Powder coated rolled sheet metal body for corrosion resistance.',
-    //     'DP/ TE(AOM) enclosure with improved ventilation',
-    //     'Capacitor Start Capacitor Run continuous duty designs available',
-    //     'Special Design for customized applications',
-    //     'Compact design.',
-    //     'Reversible Direction of rotation (on request)',
-    //     'Thermal protection available (on request)'
-    //   ],
-    //   technicalspecs: {
-    //     output_power: ['75 W to 370 W'],
-    //     phase: 'Single',
-    //     polarity: ['4'],
-    //     supply_voltage: '115,230',
-    //     frequency: ['50-60'],
-    //     construction: ['Open', 'Drip Proof Fan Cooled', 'Totally Enclosed'],
-    //     bearings : 'Sealed Ball Brg.',
-    //     duty_cycle: 'Cont.',
-    //     circuit_protection: 'Available',
-    //     frame: '100, Custom'
+    {
+      id: 1,
+      title: 'Standard Three-Phase Induction Motors',
+      image: StandardThreePhase,
+      description: 'General Purpose FHP (Fractional Horse Power) and Air Handling application motors are offered in NEMA B42/B48 Frame. These motors are designed for high efficiency and reliability, considering the global customer requirements. Motors are offered with different mounting arrangements ( Lug, Bracket, Stud, End-Shield Pad, Resilient Ring, Resilient Base) with open or closed enclosures. Thermal protection is optional and provided against requirement. ',
+      applications: 'Juicer, Bench Drilling Machine, Ice Cream Vending Machine, Wet Grinder, Winnowing Fan...',
+      range: '75 W to 370 W 2,4 & 6 Pole',
+      standard: 'IS, NEMA',
+      features: [
+        'Powder coated rolled sheet metal body for corrosion resistance.',
+        'DP/ TE(AOM) enclosure with improved ventilation',
+        'Capacitor Start Capacitor Run continuous duty designs available',
+        'Special Design for customized applications',
+        'Compact design.',
+        'Reversible Direction of rotation (on request)',
+        'Thermal protection available (on request)'
+      ],
+      technicalspecs: {
+        output_power: ['75 W to 370 W'],
+        phase: 'Single',
+        polarity: ['4'],
+        supply_voltage: '115,230',
+        frequency: ['50-60'],
+        construction: ['Open', 'Drip Proof Fan Cooled', 'Totally Enclosed'],
+        bearings : 'Sealed Ball Brg.',
+        duty_cycle: 'Cont.',
+        circuit_protection: 'Available',
+        frame: '100, Custom'
 
-    //   },
-    //   quality: '',
-    //   application: '',
-    //   download_iso: '',
-    // },
-    // {
-    //     id: 2,
-    //     title: 'HVAC Motors',
-    //     image: havacMotor,
-    //     description: 'Air handling is the major area where highly reliable and efficient motors are required. CG has got a variety of motors in different electrical starting arrangements and constructions to suit customer requirements. These are basically in rolled steel powder coated body with Permanent Split Capacitor (PSC) or 3 Phase types. Thermal protection is optional and provided against requirement.',
-    //     applications: 'Air Curtain, Chiller Unit, Condenser Unit, Exhaust Fan, Fan Coil Unit, Blowers, etc',
-    //     range: '35 W to 750 W 2 & 4 Pole / 35 W to 550 W 6 Pole',
-    //     standard: 'IS, NEMA, OTHER',
-    //     features: [
-    //       'MS Rolled Frame-Compact Design',
-    //       'Energy Efficient continuous duty',
-    //       'Totally Enclosed Construction',
-    //       'Powder Coated body',
-    //       'Compact design.',
-    //       'Sealed Ball Bearings with High Quality Grease for longer life',
-    //       'Low noise levels'
-    //     ],
-    //     technicalspecs: {
-    //       output_power: 
-    //         ["35W TO 750W" , "35W TO 370W"]
-    //       ,
-    //       phase: 'Single',
-    //       polarity: ["2 or 4" , "6 or 8"],
-    //       supply_voltage: '115,230',
-    //       frequency: ['50-60'],
-    //       construction: ['Open', 'Drip Proof Fan Cooled', 'Totally Enclosed'],
-    //       bearings : 'Sleeve Or Sealed Ball Brg.',
-    //       duty_cycle: 'Cont.',
-    //       circuit_protection: 'Optional- Auto or Manual Reset',
-    //       frame: 'Optional- NEMA 42,48, Custom'
+      },
+      quality: '',
+      application: '',
+      download_iso: '',
+    },
+    {
+        id: 2,
+        title: 'High-Efficiency Three-Phase Motors:',
+        image: HighEfficiency,
+        description: 'Air handling is the major area where highly reliable and efficient motors are required. CG has got a variety of motors in different electrical starting arrangements and constructions to suit customer requirements. These are basically in rolled steel powder coated body with Permanent Split Capacitor (PSC) or 3 Phase types. Thermal protection is optional and provided against requirement.',
+        applications: 'Air Curtain, Chiller Unit, Condenser Unit, Exhaust Fan, Fan Coil Unit, Blowers, etc',
+        range: '35 W to 750 W 2 & 4 Pole / 35 W to 550 W 6 Pole',
+        standard: 'IS, NEMA, OTHER',
+        features: [
+          'MS Rolled Frame-Compact Design',
+          'Energy Efficient continuous duty',
+          'Totally Enclosed Construction',
+          'Powder Coated body',
+          'Compact design.',
+          'Sealed Ball Bearings with High Quality Grease for longer life',
+          'Low noise levels'
+        ],
+        technicalspecs: {
+          output_power: 
+            ["35W TO 750W" , "35W TO 370W"]
+          ,
+          phase: 'Single',
+          polarity: ["2 or 4" , "6 or 8"],
+          supply_voltage: '115,230',
+          frequency: ['50-60'],
+          construction: ['Open', 'Drip Proof Fan Cooled', 'Totally Enclosed'],
+          bearings : 'Sleeve Or Sealed Ball Brg.',
+          duty_cycle: 'Cont.',
+          circuit_protection: 'Optional- Auto or Manual Reset',
+          frame: 'Optional- NEMA 42,48, Custom'
   
-    //     },
-    //     quality: '',
-    //     application: '',
-    //     download_iso: '',
-    // },
+        },
+        quality: '',
+        application: '',
+        download_iso: '',
+    },
 
     // {
     // id: 3,
