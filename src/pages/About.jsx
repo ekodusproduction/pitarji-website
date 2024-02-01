@@ -43,26 +43,26 @@ const About = () => {
                 </div>
             </div>
             <div className='relative ' data-aos="fade-right" data-aos-duration="1200">
-                <img src="/images/about-us.png" className='h-[350px]' alt="" />
+                <img src="/images/about-us.png" className='h-[350px] rounded' alt="" />
                 {/* <img src="/images/about_image1.jpg" className='absolute bottom-[-50px] right-[-80px] w-[300px] border-8 border-white hidden lg:visible' alt="" /> */}
             </div>
         </div>
         </section>
-        <section  data-aos="fade-up" data-aos-duration="1200" className='border' style={{ background: 'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/images/bg2.jpg")',backgroundSize:'cover'}}>
+        <section  data-aos="fade-up" data-aos-duration="1200" className='border' style={{ background: 'url(images/bg-9.jpg)',backgroundSize:'cover'}}>
             <div className='md:w-[80vw] lg:w[70vw] flex lg:flex-row flex-col justify-center items-center mx-auto p-10 gap-8 lg:gap-16'>
                 <div className='shrink-0'>
-                    <img src="/images/profile.png" className='w-[200px] lg:w-[200px]' alt="" />
+                    <img src="/images/profile.png" className='w-[200px] lg:w-[200px] rounded' alt="" />
                 </div>
                 <div>
-                    <h2 className='text-2xl font-bold mb-4 text-center lg:text-left text-white'>Words from the Director</h2>
-                    <p className='mb-2 text-white'>Greetings from Pitarji!</p>
-                    <p className='text-justify text-white'>
+                    <h2 className='text-2xl font-bold mb-4 text-center lg:text-left text-black'>Words from the Director</h2>
+                    <p className='mb-2 text-black font-semibold'>Greetings from Pitarji!</p>
+                    <p className='text-justify text-black font-semibold'>
                         As the Director of Pitarji, I am delighted to welcome you to our world of electrical solutions. 
                         At Pitarji, we envision a future where reliable and efficient power is not just a necessity
                         but a catalyst for progress. Our journey with Crompton Greaves has been a testament to our 
                         commitment to excellence and innovation.
                     </p>
-                    <p className='mb-3 text-white'>
+                    <p className='mb-3 text-black font-semibold'>
                         <br/>
                         At Pitarji, our mission is not just about delivering quality electrical products;
                         it's about fostering relationships and empowering our clients. We understand the
@@ -75,7 +75,7 @@ const About = () => {
         </section>
         <section className='flex lg:flex-row flex-col justify-center items-center gap-12 my-16 p-4 mb-16' data-aos="fade-up" data-aos-duration="1200">
             <div className='mt-4'>
-                <img className='lg:w-[40vw]' src="/images/our-mission.jpg" alt="" />
+                <img className='lg:w-[40vw] rounded' src="/images/our-mission.jpg" alt="" />
             </div>
             <div className='lg:w-[40vw] flex flex-col gap-4'>
                 <h2 className='text-3xl font-bold '>Our Mission</h2>
@@ -102,9 +102,9 @@ const About = () => {
                 </ul>
             </div>
         </section>
-        <section className='flex lg:flex-row-reverse flex-col justify-center items-center gap-12 mb-16' data-aos="fade-up" data-aos-duration="1200">
+        <section className='flex lg:flex-row-reverse flex-col justify-center items-center gap-12 mb-16' data-aos="fade-up" data-aos-duration="900">
             <div className='mt-4'>
-                <img className='lg:w-[40vw]' src="/images/our-vision.jpg" alt="" />
+                <img className='lg:w-[40vw] rounded' src="/images/our-vision.jpg" alt="" />
             </div>
             <div className='lg:w-[40vw] flex flex-col gap-4'>
                 <h2 className='text-3xl font-bold '>Our Vision</h2>

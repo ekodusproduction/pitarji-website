@@ -6,7 +6,7 @@ const Button = ({category,type,children,color, disabled,clickHandler}) => {
   return (
     <button type={type} disabled={disabled} 
     onClick={clickHandler}
-    className='bg-[#fff] py-2 px-4  border cursor-pointer text-black w-fit hover:bg-emerald-700 hover:text-white'>{children}</button>
+    className='bg-[#fff] py-2 px-4  border cursor-pointer text-black w-fit hover:bg-green-700 hover:text-white'>{children}</button>
   )
 }
 else{

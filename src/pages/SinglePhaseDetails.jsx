@@ -25,7 +25,7 @@ const SinglePhaseDetails = () => {
             </div>
             <div className='flex flex-col gap-8'>
               <div className='lg:w-[40vw] flex flex-col gap-4'>
-                <p className='bg-[#84C550] w-fit p-2 text-white font-bold'>SINGLE PHASE MOTOR</p>
+                <p className='bg-[#fff] w-fit p-2 border text-black'>Single Phase Motor</p>
                 <h3 className='font-semibold text-2xl'>{data.title}</h3>
                 <p className='text-slate-700'>{data.description}</p>
               </div>
