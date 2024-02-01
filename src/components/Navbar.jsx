@@ -50,7 +50,7 @@ const Navbar = () => {
         <section className='flex px-8 items-center justify-between shadow-md'>
             <div className='py-4 flex items-center gap-4'>
                 <FiMenu size={30} className='md:hidden' onClick={openMenuHandler}/>
-                <img src="/images/logo2.png" alt="" className='w-[230px]' />
+                <img src="/images/logo-main.png" alt="" className='w-[120px]' />
             </div>
             {isMenuOpen && 
                 <ul className='gap-8 pl-4 md:hidden'>
