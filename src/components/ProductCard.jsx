@@ -14,7 +14,7 @@ const ProductCard = ({data}) => {
 
   const navigate = useNavigate();
   return (
-    <div className='md:flex flex-row justify-center items-center border-[1px] gap-4 px-5 py-4 rounded shadow-sm bg-[#fefefe]'>
+    <div className='md:flex flex-row justify-center items-center border-[1px] gap-4 px-5 py-4 rounded shadow-sm bg-[#fcfcfc]'>
       <div className="md-shrink-0 flex justify-center">
         <img data-aos='fade-right' data-aos-duration="1000" className='w-80 object-cover md:h-full md:w-80' src={data.image} alt="" />
       </div>

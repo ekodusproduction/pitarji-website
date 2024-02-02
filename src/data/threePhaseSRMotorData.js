@@ -1,11 +1,11 @@
 import React from "react";
 
-import ThreePhaseSRMotor from '../../public/images/products/ThreePhase/ThreePhaseSRMotor.png'
-import SalientPole from '../../public/images/products/ThreePhase/salientPole.png'
-import Hysteresis from '../../public/images/products/ThreePhase/hysteresis.png'
-import PMSM from '../../public/images/products/ThreePhase/pmsm.png'
-import IPMSM from '../../public/images/products/ThreePhase/ipmsm.png'
-import Reluctance from '../../public/images/products/ThreePhase/reluctance.png'
+import ThreePhaseSRMotor from '/images/products/ThreePhase/ThreePhaseSRMotor.png'
+import SalientPole from '/images/products/ThreePhase/salientPole.png'
+import Hysteresis from '/images/products/ThreePhase/hysteresis.png'
+import PMSM from '/images/products/ThreePhase/pmsm.png'
+import IPMSM from '/images/products/ThreePhase/ipmsm.png'
+import Reluctance from '/images/products/ThreePhase/reluctance.png'
 
 export const srMotorData = [
     {

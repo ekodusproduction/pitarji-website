@@ -22,21 +22,21 @@ const Home = () => {
         </div> */}
         <Banner/>
         <section>
-        <div className='flex flex-col gap-4 sm:p-16 p-4 py-8'>
-            <h2 className='font-bold text-3xl title_heading'>Our Products</h2>
-            <p className='text-md text-slate-700'>Single Phase Motors are used in variety of applications in households and small industrial sectors, where three phase power supply is not available. Single Phase motors are classified based on the type of starting mechanism. Widely used starting mechanisms
-                are SplitPhase, Capacitor Start and Run, Capacitor Start Induction Run & Capacitor Start Capacitor Run.
-            </p>
-            <p className='text-md text-slate-700'>Depending upon the application load characteristics, mounting suitability and cooling mechanisms, 
-                we have single phase motors in various output powers, constructions and enclosures.</p>
+            <div className='flex flex-col gap-4 sm:p-16 p-4 py-8'>
+                <h2 className='font-bold text-3xl title_heading'>Our Products</h2>
+                <p className='text-md text-slate-700'>Single Phase Motors are used in variety of applications in households and small industrial sectors, where three phase power supply is not available. Single Phase motors are classified based on the type of starting mechanism. Widely used starting mechanisms
+                    are SplitPhase, Capacitor Start and Run, Capacitor Start Induction Run & Capacitor Start Capacitor Run.
+                </p>
+                <p className='text-md text-slate-700'>Depending upon the application load characteristics, mounting suitability and cooling mechanisms, 
+                    we have single phase motors in various output powers, constructions and enclosures.</p>
 
-        </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 m-[auto] xl:grid-cols-3 gap-12 pt-8 pb-16 sm:px-16 px-4'>
-        {data.map((item, index)=> (
-              <ProductCard data={item} key={index}/>
-            ))}
-        </div>
-    </section>
+            </div>
+            <div className='grid grid-cols-1 lg:grid-cols-2 m-[auto] xl:grid-cols-3 gap-12 pt-8 pb-16 sm:px-16 px-4'>
+            {data.map((item, index)=> (
+                <ProductCard data={item} key={index} />
+                ))}
+            </div>
+        </section>
         <Footer/>
     
     </>

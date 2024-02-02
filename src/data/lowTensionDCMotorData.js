@@ -1,11 +1,11 @@
 import React from "react";
 
-import DCSeriesMotor from '../../public/images/products/ThreePhase/dcSeries.png'
-import DCShuntMotor from '../../public/images/products/ThreePhase/dcShunt.png'
-import DCCompoundMotor from '../../public/images/products/ThreePhase/dcCompound.png'
-import PMDCMotor from '../../public/images/products/ThreePhase/pmdcMotor.png'
-import BLDC from '../../public/images/products/ThreePhase/bldc.png'
-import Reluctance from '../../public/images/products/ThreePhase/reluctance.png'
+import DCSeriesMotor from '/images/products/ThreePhase/dcSeries.png'
+import DCShuntMotor from '/images/products/ThreePhase/dcShunt.png'
+import DCCompoundMotor from '/images/products/ThreePhase/dcCompound.png'
+import PMDCMotor from '/images/products/ThreePhase/pmdcMotor.png'
+import BLDC from '/images/products/ThreePhase/bldc.png'
+import Reluctance from '/images/products/ThreePhase/reluctance.png'
 
 export const lowTensionDCMotor = [
     {
