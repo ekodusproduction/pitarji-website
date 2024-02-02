@@ -17,7 +17,7 @@ const ThreePhaseSRMotorDetails = () => {
     return (
         <>
             <Navbar />
-            <Header title={'Three Phase Detail'} />
+            <Header title={'Low Tension Motor Detail'} />
             <section className='md:mx-8 mx-4 my-16 '>
                 <div className='flex-row md:flex justify-center gap-6'>
                     <div className='md-shrink-0 mb-4'>
@@ -25,7 +25,7 @@ const ThreePhaseSRMotorDetails = () => {
                     </div>
                     <div className='flex flex-col gap-4'>
                         <div className='lg:w-[40vw] flex flex-col gap-4'>
-                            <p className='bg-[#fff] w-fit p-2 border text-black'>Three Phase Motor</p>
+                            <p className='bg-[#fff] w-fit p-2 border text-black'>Low Tension Motor</p>
                             <h3 className='font-semibold text-2xl'>{data.title}</h3>
                             <p className='text-slate-700'>{data.description}</p>
                         </div>

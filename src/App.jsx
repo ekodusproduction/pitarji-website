@@ -13,6 +13,7 @@ import Contact from './pages/Contact'
 import SinglePhaseDetails from './pages/SinglePhaseDetails'
 import ThreePhaseDetails from './pages/ThreePhaseDetails'
 import ThreePhaseSRMotorDetails from './pages/ThreePhaseSRMotorDetails'
+import LTDCMotorDetails from './pages/LTDCMotorDetails'
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/singlephasedetails' element={<SinglePhaseDetails/>}/>
         <Route path='/threephasedetails' element={<ThreePhaseDetails/>}/>
         <Route path='/threePhaseSRMotordetails' element={<ThreePhaseSRMotorDetails/>}/>
+        <Route path='/lowTensionDCMotorDetails' element={<LTDCMotorDetails/>}/>
       </Routes>
      
     </BrowserRouter>

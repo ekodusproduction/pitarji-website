@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom'
 import { FaCheckCircle } from "react-icons/fa";
 import Button from '../ui/Button'
 
-const ThreePhaseDetails = () => {
+const LowTensionDCMotorDetails = () => {
     const { state } = useLocation();
     const [selectedOption, setSelectedOption] = useState('features');
     const data = state.key;
@@ -17,7 +17,7 @@ const ThreePhaseDetails = () => {
     return (
         <>
             <Navbar />
-            <Header title={'Low Tension Motor Details'} />
+            <Header title={'Low Tension Motors Details'} />
             <section className='md:mx-8 mx-4 my-16 '>
                 <div className='flex-row md:flex justify-center gap-6'>
                     <div className='md-shrink-0 mb-4'>
@@ -193,4 +193,4 @@ const ThreePhaseDetails = () => {
     )
 }
 
-export default ThreePhaseDetails
+export default LowTensionDCMotorDetails
