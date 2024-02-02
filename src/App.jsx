@@ -15,11 +15,19 @@ import ThreePhaseDetails from './pages/ThreePhaseDetails'
 import ThreePhaseSRMotorDetails from './pages/ThreePhaseSRMotorDetails'
 import LTDCMotorDetails from './pages/LTDCMotorDetails'
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when route changes
+  }, [pathname]);
+  return null;
+};
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
+    <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>

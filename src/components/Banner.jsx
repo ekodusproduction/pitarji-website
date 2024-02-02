@@ -6,12 +6,15 @@ import '@splidejs/react-splide/css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+  const navigate = useNavigate()
 
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
+  
 
   return (
     <Splide aria-label="My Favorite Images"
@@ -36,7 +39,7 @@ const Banner = () => {
                       <h1 className='lg:text-8xl text-5xl font-extrabold text-white drop-shadow-md text-shadow' data-aos='fade-right' data-aos-duration="1000">High Performace <br />Electrical Tools</h1>
                       <p className='text-[#fff] font-bold' data-aos='fade-right' data-aos-duration="1000">Empower Your World: Ignite Innovation with Our Essential Electrical Solutions!</p>
                       <div className='flex gap-4  mt-2' data-aos='fade-right' data-aos-duration="1000">
-                          <Button category='primarybtn' >Check Our Products </Button>
+                          <Button category='primarybtn' clickHandler={()=>navigate('/singlephase')} >Check Our Products </Button>
                       </div>
                     </div>
                   </div>

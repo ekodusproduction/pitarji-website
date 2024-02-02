@@ -5,8 +5,11 @@ import Header from '../components/Header'
 import Button from '../ui/Button'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from "yup";
+import axios from 'axios'
+import Swal from 'sweetalert2'
 
 const Contact = () => {
+    const [isSubmitting,setSubmitting] = useState(false);
 
     const validateSchema = Yup.object().shape({
         fullname: Yup.string().required("*This field is required"),
@@ -21,6 +24,33 @@ const Contact = () => {
             #g-mapdisplay img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}
         }
       }`
+
+      const formSubmitHandler = (values) => {
+        console.log(values)
+        setSubmitting(true)
+        axios.defaults.headers.post['Content-Type'] = 'application/json';
+        axios.post('https://formsubmit.co/ajax/pitarjibiofuels@gmail.com', values)
+            .then(response => {
+                console.log(response)
+                Swal.fire({
+                    icon: "success",
+                    title: "Success",
+                    text: "Thank You, we will connect to you soon!",
+                  });
+                setSubmitting(false)
+            })
+            .catch(error => {
+                console.log(error)
+                Swal.fire({
+                    icon: "error",
+                    title: "Error",
+                    text: "Something went wrong.",
+                  });
+                setSubmitting(false)
+            }
+                )
+
+      }
   return (
     <>
         <Navbar/>
@@ -31,14 +61,9 @@ const Contact = () => {
                 <Formik
                     initialValues={{ fullname: "", email: "", phonenumber: "", message: "" }}
                     validationSchema={validateSchema}
-                    onSubmit={(values,{ setSubmitting})=> {
-                        setTimeout(() => {
-                            alert(JSON.stringify(values, null, 2));
-                            setSubmitting(false);
-                          }, 400);
-                    }}
+                    onSubmit={formSubmitHandler}
                 >
-                    {({isSubmitting})=> (
+                    
                         <Form className='flex flex-col gap-8'>
                             <div className='relative'>
                                 <Field
@@ -80,11 +105,11 @@ const Contact = () => {
                             category={'primarybtn'} 
                             type={'submit'} 
                             disabled={isSubmitting}
-                          >Send to Us</Button>
+                          >{isSubmitting? 'Please Wait...': 'Submit'}</Button>
 
                             
                         </Form>
-                    )}
+                
                 </Formik>
                
             </div>
