@@ -12,6 +12,7 @@ import ThreePhaseMotors from './pages/ThreePhaseMotors'
 import Contact from './pages/Contact'
 import SinglePhaseDetails from './pages/SinglePhaseDetails'
 import ThreePhaseDetails from './pages/ThreePhaseDetails'
+import ThreePhaseSRMotorDetails from './pages/ThreePhaseSRMotorDetails'
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/threephase' element={<ThreePhaseMotors/>}/>
         <Route path='/singlephasedetails' element={<SinglePhaseDetails/>}/>
         <Route path='/threephasedetails' element={<ThreePhaseDetails/>}/>
+        <Route path='/threePhaseSRMotordetails' element={<ThreePhaseSRMotorDetails/>}/>
       </Routes>
      
     </BrowserRouter>

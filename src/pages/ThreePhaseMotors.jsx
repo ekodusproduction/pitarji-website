@@ -3,7 +3,9 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ThreePhaseProductCard from '../components/ThreePhaseProductCard'
-import { data } from '../data/threePhaseData'
+import ThreePhaseSRMotorProductCard from '../components/ThreePhaseSRMotorProductCard'
+import { data } from '../data/threePhaseSquirrelData'
+import { srMotorData } from '../data/threePhaseSRMotorData'
 
 const ThreePhaseMotors = () => {
   return (
@@ -28,10 +30,18 @@ const ThreePhaseMotors = () => {
           <div className='px-16 mb-8'>
               <h3 className='mb-12 font-bold text-2xl'>Squirrel Cage Motors</h3>
               <div className='grid grid-cols-3 gap-12 '>
-              {data.map(item=> (
-                <ThreePhaseProductCard data={item}/>
+              {data.map((item, index)=> (
+                <ThreePhaseProductCard data={item} key={index}/>
               ))}
               </div>
+          </div>
+          <div className='px-16 mb-8'>
+            <h3 className='mb-12 font-bold text-2xl'>SR Motors</h3>
+            <div className='grid grid-cols-3 gap-12 '>
+              {srMotorData.map((item, index)=> (
+                <ThreePhaseSRMotorProductCard data={item} key={index}/>
+              ))}
+            </div>
           </div>
           {/* <div className='px-16 py-8 border-b-2'>
               <h3 className='mb-12 font-bold text-2xl'>SR Motors</h3>

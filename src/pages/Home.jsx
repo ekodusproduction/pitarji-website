@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import ProductCard from '../components/ProductCard'
 import '../global.css'
-import { data } from '../data/singlephasedata'
+import { data } from '../data/threePhaseSquirrelData'
 
 const Home = () => {
   return (
@@ -32,8 +32,8 @@ const Home = () => {
 
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 m-[auto] xl:grid-cols-3 gap-12 pt-8 pb-16 sm:px-16 px-4'>
-        {data.map(item=> (
-              <ProductCard data={item}/>
+        {data.map((item, index)=> (
+              <ProductCard data={item} key={index}/>
             ))}
         </div>
     </section>
