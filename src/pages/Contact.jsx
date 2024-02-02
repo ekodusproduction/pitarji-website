@@ -15,6 +15,12 @@ const Contact = () => {
         message: Yup.string().required("*This field is required")
          
       });
+
+      const mapCss = `{
+        .mapCss{
+            #g-mapdisplay img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}
+        }
+      }`
   return (
     <>
         <Navbar/>
@@ -83,9 +89,13 @@ const Contact = () => {
                
             </div>
             <div className=''>
-                <iframe
-                 className='p-2 lg:w-[50vw] w-[95vw]' 
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.6088022470067!2d91.77985157344392!3d26.144295242129918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5923b109797f%3A0x1e84a3dca5a2bd58!2sEkodus%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1701075645004!5m2!1sen!2sin" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div style={{overflow:'hidden',maxWidth:'100%',width:'600px',height:'450px'}}>
+                    <div id="g-mapdisplay" style={{height:'100%', width:'100%',maxWidth:'100%'}}>
+                        <iframe style={{height:'100%',width:'100%',border:'0'}} frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=jawaharnagar,+khanapara,+Guwahati,+Assam,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>
+                    <a class="from-embedmap-code" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="grab-maps-authorization">premium bootstrap themes</a>
+                    <style className='.mapCss'>{mapCss}</style>
+                </div>
             </div>
         </section>
         <Footer/>
