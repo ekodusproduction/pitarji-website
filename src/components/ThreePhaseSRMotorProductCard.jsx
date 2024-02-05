@@ -13,7 +13,7 @@ const synchronousMotorProduct = ({data}) => {
     return (
         <div className='md:flex flex-row justify-center items-center border-[1px] gap-4 p-6 rounded shadow-sm bg-[#fcfcfc]'>
             <div className="md-shrink-0 flex justify-center">
-            <img data-aos='fade-right' data-aos-duration="1000" className='w-80 object-cover md:h-full md:w-80' src={data.image} alt="" />
+            <img data-aos='fade-right' data-aos-duration="1000" className='w-40 object-cover md:h-full md:w-80' src={data.image} alt="" />
             </div>
             <div className='flex flex-col gap-4'>
             <h3 className='font-semibold text-lg'>{data.title}</h3>

@@ -56,7 +56,7 @@ const Contact = () => {
         <Navbar/>
         <Header title={'Contact Us'}/>
         <section className='flex lg:flex-row flex-col justify-center items-center gap-12 p-12 '>
-            <div className='lg:w-[50vw] w-[90vw]'>
+            <div className='lg:w-[50vw] w-[90vw] border p-4'>
                 <h2 className='text-3xl mb-4 font-bold'>Get to Know Us</h2>
                 <Formik
                     initialValues={{ fullname: "", email: "", phonenumber: "", message: "" }}
@@ -113,7 +113,7 @@ const Contact = () => {
                 </Formik>
                
             </div>
-            <div className=''>
+            <div className='w-fit'>
                 <div style={{overflow:'hidden',maxWidth:'100%',width:'600px',height:'450px'}}>
                     <div id="g-mapdisplay" style={{height:'100%', width:'100%',maxWidth:'100%'}}>
                         <iframe style={{height:'100%',width:'100%',border:'0'}} frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=jawaharnagar,+khanapara,+Guwahati,+Assam,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>

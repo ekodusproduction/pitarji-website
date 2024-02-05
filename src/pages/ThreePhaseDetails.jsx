@@ -24,7 +24,7 @@ const ThreePhaseDetails = () => {
                         <img className='lg:w-[25vw] p-4 max-w-[300px] border' src={data.image} alt="" />
                     </div>
                     <div className='flex flex-col gap-4'>
-                        <div className='lg:w-[40vw] flex flex-col gap-4'>
+                        <div className='lg:w-[40vw] sm:w-[90vw] flex flex-col gap-4'>
                             <p className='bg-[#fff] w-fit p-2 border text-black'>Low Tension Motor</p>
                             <h3 className='font-semibold text-2xl'>{data.title}</h3>
                             <p className='text-slate-700'>{data.description}</p>

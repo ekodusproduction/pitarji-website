@@ -34,7 +34,7 @@ const Dropdown = ({dropdownItems,position}) => {
                 <li key={data.index} className='relative p-4 border-b-2' onMouseEnter={()=>handleMouseEnter(index)} onMouseLeave={handleMouseLeave}>
                     <Link to={data.link}>{data.title}</Link>
                     {data.subMenu && data.subMenu.length > 0 && dropdownOpen==index && <Dropdown dropdownItems={data.subMenu} position={'top-[50%] left-[100%]'} onMouseEnter={()=>handleDropdownMouseEnter(index)} onMouseLeave={handleDropdownMouseLeave}/>}
-                    {console.log(dropdownOpen, index)}
+                    {/* {console.log(dropdownOpen, index)} */}
                 </li>
             ))}
         </ul>

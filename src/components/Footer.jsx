@@ -27,7 +27,7 @@ const Footer = () => {
                 <li className='px-4 py-1 border-slate-700'><Link to="/">Home</Link></li>
                 <li className='px-4 py-1 border-slate-700'><Link to="/about">About Us</Link></li>
                 <li className='px-4 py-1 border-slate-700'><Link to="/singlephase">Single Phase Motors</Link></li>
-                <li className='px-4 py-1 border-slate-700'><Link to="/threephase">Three Phase Motors</Link></li>
+                <li className='px-4 py-1 border-slate-700'><Link to="/lowTensionMotors">Low Tension Motors</Link></li>
                 <li className='px-4 py-1 border-slate-700'><Link to="/contact">Contact Us</Link></li>
             </ul>
         </div>
