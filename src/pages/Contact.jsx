@@ -113,7 +113,7 @@ const Contact = () => {
                 </Formik>
                
             </div>
-            <div className='w-fit'>
+            <div className='w-[350px] md:w-fit'>
                 <div style={{overflow:'hidden',maxWidth:'100%',width:'600px',height:'450px'}}>
                     <div id="g-mapdisplay" style={{height:'100%', width:'100%',maxWidth:'100%'}}>
                         <iframe style={{height:'100%',width:'100%',border:'0'}} frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=jawaharnagar,+khanapara,+Guwahati,+Assam,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
