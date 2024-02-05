@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <nav className='sticky top-0 z-20 bg-white'>
        
-        <section className='flex md:flex-row flex-col px-8 justify-between shadow-md'>
+        <section className='flex md:flex-row flex-col px-8 justify-between md:items-center shadow-md'>
             <div className='py-4 flex items-center gap-4'>
                 <FiMenu size={30} className='md:hidden' onClick={openMenuHandler}/>
                 <NavLink to="/">

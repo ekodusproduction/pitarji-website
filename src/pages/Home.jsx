@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import ProductCard from '../components/ProductCard'
 import '../global.css'
-import { data } from '../data/threePhaseSquirrelData'
+import { data } from '../data/singlephasedata'
 
 const Home = () => {
   return (
@@ -31,7 +31,11 @@ const Home = () => {
                     we have single phase motors in various output powers, constructions and enclosures.</p>
 
             </div>
+            <div className='ml-4 md:ml-16'>
+                <h2 className='font-medium'>Single Phase Motors</h2>
+            </div>
             <div className='grid grid-cols-1 lg:grid-cols-2 m-[auto] xl:grid-cols-3 gap-12 pt-8 pb-16 sm:px-16 px-4'>
+                
             {data.map((item, index)=> (
                 <ProductCard data={item} key={index} />
                 ))}
