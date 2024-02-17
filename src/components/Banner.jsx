@@ -36,7 +36,7 @@ const Banner = () => {
                       <img className='w-[200px] md:w-[300px] lg:w-[400px]' data-aos='fade-left' data-aos-duration="1000" src="/images/products/single_phase_motor.png" alt="" />
                     </div>
                     <div className='flex flex-col justify-center gap-4' >
-                      <h1 className='lg:text-7xl md:text-5xl text-4xl font-extrabold text-white drop-shadow-md text-shadow' data-aos='fade-right' data-aos-duration="1000">High Performace <br />Electrical Tools</h1>
+                      <h1 className='lg:text-7xl md:text-5xl text-4xl font-extrabold text-white drop-shadow-md text-shadow' data-aos='fade-right' data-aos-duration="1000">High Performace <br />Electrical Motors</h1>
                       <p className='text-[#fff] font-bold' data-aos='fade-right' data-aos-duration="1000">Empower Your World: Ignite Innovation with Our Essential Electrical Solutions!</p>
                       <div className='flex gap-4  mt-2' data-aos='fade-right' data-aos-duration="1000">
                           <Button category='primarybtn' clickHandler={()=>navigate('/singlephase')} >Check Our Products </Button>
