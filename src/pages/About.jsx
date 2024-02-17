@@ -86,7 +86,7 @@ const About = () => {
                     clients have access to cutting-edge technologies that redefine industry standards.
                 </p>
                 <b>Why Choose Pitarji:</b>
-                <ul className='list-disc px-4'>
+                <ul className='list-disc px-8 md:px-4'>
                     <li className='mb-3'>
                         <b>Quality Assurance:</b> We understand the critical role electricity plays in your operations. 
                         Our partnership with Crompton Greaves guarantees products of the highest quality and durability.
@@ -115,7 +115,7 @@ const About = () => {
                     but exceed the evolving needs of our clients.
                 </p>
                 <b>Key Pillars of Our Vision:</b>
-                <ul className='list-disc'>
+                <ul className='list-disc px-8 md:px-4'>
                     <li>
                         <b>Innovation:</b> 
                          &nbsp; We embrace technological advancements to offer cutting-edge electrical solutions that 

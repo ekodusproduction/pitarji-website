@@ -12,6 +12,11 @@
     left: 5px;
 
 }
+.active-nav-menu{
+    background: #fefefe;
+    padding: 12px;
+    outline: 1px solid #e3e2e2;
+}
 
 .text-shadow{
     text-shadow: 2px 5px 15px rgba(136, 136, 136, 0.438);

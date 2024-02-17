@@ -13,7 +13,7 @@ const dropdownList = [
     },
     {
         index: 2,
-        title: 'LT Motor',
+        title: 'Low Tension Motors',
         link:'/lowTensionMotors',
     
 
@@ -57,25 +57,25 @@ const Navbar = () => {
             </div>
             {isMenuOpen && 
                 <ul className='gap-8 pl-4 md:hidden'>
-                    <li className='py-2'><NavLink to="/" className={({ isActive }) => isActive ? "font-bold" : ""}>Home</NavLink></li>
-                    <li className='py-2'><NavLink to="/about" className={({ isActive }) => isActive ? "font-bold" : ""}>About us</NavLink></li>
-                    <li className='py-2'><NavLink to="/singlephase" className={({ isActive }) => isActive ? "font-bold" : ""}>Single Phase Motors</NavLink></li>
-                    <li className='py-2'><NavLink to="/lowTensionMotors" className={({ isActive }) => isActive ? "font-bold" : ""}>Low Tension Motors</NavLink></li>
-                    <li className='py-2'><NavLink to="/contact" className={({ isActive }) => isActive ? "font-bold" : ""}>Contact Us</NavLink></li>
+                    <li className='py-2'><NavLink to="/" className={({ isActive }) => isActive ? "font-bold active-nav-menu" : ""}>Home</NavLink></li>
+                    <li className='py-2'><NavLink to="/about" className={({ isActive }) => isActive ? "font-bold active-nav-menu" : ""}>About us</NavLink></li>
+                    <li className='py-2'><NavLink to="/singlephase" className={({ isActive }) => isActive ? "font-bold active-nav-menu" : ""}>Single Phase Motors</NavLink></li>
+                    <li className='py-2'><NavLink to="/lowTensionMotors" className={({ isActive }) => isActive ? "font-bold active-nav-menu" : ""}>Low Tension Motors</NavLink></li>
+                    <li className='py-2'><NavLink to="/contact" className={({ isActive }) => isActive ? "font-bold active-nav-menu" : ""}>Contact Us</NavLink></li>
                 </ul>
             }
             
     
             <ul className='md:flex gap-8 pl-4 hidden'>
-                <li className='py-2'><NavLink to="/" className={({ isActive }) => isActive ? "font-bold" : ""}>Home</NavLink></li>
-                <li  className='py-2'><NavLink to="/about" className={({ isActive }) => isActive ? "font-bold" : ""}>About us</NavLink></li>
+                <li className='py-2'><NavLink to="/" className={({ isActive }) => isActive ? "font-bold active-nav-menu" : ""}>Home</NavLink></li>
+                <li  className='py-2'><NavLink to="/about" className={({ isActive }) => isActive ? "font-bold active-nav-menu" : ""}>About us</NavLink></li>
                 <li className='relative py-2' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <p className='cursor-pointer'>Our Products</p>
 
                     {dropdownOpen && <Dropdown dropdownItems={dropdownList} position={'top-[100%]'} onMouseEnter={handleDropdownMouseEnter} onMouseLeave={handleDropdownMouseLeave}/>}
 
                 </li>
-                <li  className='py-2'><NavLink to="/contact" className={({ isActive }) => isActive ? "font-bold" : ""}>Contact Us</NavLink></li>
+                <li  className='py-2'><NavLink to="/contact" className={({ isActive }) => isActive ? "font-bold active-nav-menu" : ""}>Contact Us</NavLink></li>
             </ul>
         </section>
     </nav>
