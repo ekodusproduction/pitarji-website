@@ -39,8 +39,13 @@ const App = () => {
         <Route path='/threePhaseSRMotordetails' element={<ThreePhaseSRMotorDetails/>}/>
         <Route path='/lowTensionDCMotorDetails' element={<LTDCMotorDetails/>}/>
       </Routes>
-     
+      <div>
+        <a href="https://wa.me/8822771728" target='blank'>
+          <img src="/images/whatsapp.png" className='w-[60px] fixed bottom-4 right-4' alt="" />
+        </a>
+     </div>
     </BrowserRouter>
+   
    
     </>
   )

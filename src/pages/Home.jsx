@@ -26,7 +26,7 @@ const Home = () => {
                 </div>
             </div> */}
             <Banner/>
-            <section>
+            <section className='max-w-[1500px] m-auto'>
                 <div className='flex flex-col gap-4 sm:p-16 p-4 py-8'>
                     <h2 className='font-bold text-3xl title_heading'>Our Products</h2>
                     <p className='text-md text-slate-700'>Single Phase Motors are used in variety of applications in households and small industrial sectors, where three phase power supply is not available. Single Phase motors are classified based on the type of starting mechanism. Widely used starting mechanisms
@@ -40,7 +40,7 @@ const Home = () => {
                     <h2 className='font-medium'>Single Phase Motors</h2>
                     <Button category='primarybtn' clickHandler={()=>navigate('/singlephase', { state: {key: data} })}>View All</Button>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-[auto] xl:grid-cols-4 gap-12 pt-8 pb-16 sm:px-16 px-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  m-[auto] gap-12 pt-8 pb-16 sm:px-16 px-4'>
                     {data.map((item, index)=> (
                             index <=5 ? <ProductCard data={item} key={index} /> : null
                         ))
@@ -50,7 +50,7 @@ const Home = () => {
                     <h2 className='font-medium'>Low Tension Motors</h2>
                     <Button category='primarybtn' clickHandler={()=>navigate('/lowTensionMotors', { state: {key: srMotorData} })}>View All</Button>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-[auto] xl:grid-cols-4  gap-12 pt-8 pb-16 sm:px-16 px-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-[auto]  gap-12 pt-8 pb-16 sm:px-16 px-4'>
                     {srMotorData.map((item, index)=> (
                             index <=5 ? <ProductCard data={item} key={index} /> : null
                         ))
